@@ -33,7 +33,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-family: 'Krona One', sans-serif;;
+    font-family: 'Krona One', sans-serif;
     font-size: 36px;
 }
 
@@ -47,18 +47,26 @@ body {
 .apresentacao__links {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-style: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
-    background-color: #008F11;
-    width: 168px;
+    /* background-color: #008F11; */
+    border: 2px solid #008F11;
+    width: 378px;
     text-align: center;
-    align-items: baseline;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
-    padding: 16px 0;
+    padding: 21.5px 0;
     text-decoration: none;
     color: #765898;
     font-family: 'Montserrat', sans-serif;
@@ -70,13 +78,11 @@ body {
     padding: 1px;
     margin: 1px;
 }
-/*
-span {
+/*span {
     color: #765898;
     border: 1px solid #765898;
     padding: 10px;
-} 
-*/
+} */
 .projetos {
     color: #765898;
 }
@@ -99,6 +105,6 @@ span {
     color: #008F11;
     border: 1px solid #008F11;
     padding: 10px;
-    width: 28%;
+    /* width: 28%; */
     border-radius: 16px;
 }

@@ -32,6 +32,12 @@ body {
     font-size: 24px;
     font-weight: 600;
     color: #765898;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: #008F11;
+    font-size: 25px;
 }
 
 .apresentacao {
@@ -46,6 +52,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.apresentacao__conteudo__texto a {
+    text-decoration: none;
+    color: #765898;
 }
 
 .apresentacao__conteudo__titulo {

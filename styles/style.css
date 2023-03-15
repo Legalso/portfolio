@@ -5,6 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+:root {
+    /* light black: #0D0208
+    lighter light black: #272727
+    matrix green: #008F11
+    evangelion purple: #765898  
+    fonte primaria: 'Krona One', sans-serif;
+    fonte secundária: 'Montserrat', sans-serif; */
+    --cor-primaria: #0D0208;
+    --cor-secundaria: #008F11;
+    --cor-terciaria: #765898;
+    --cor-hover: #272727;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Dancing Script', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +29,9 @@
 body {
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #0D0208;
-    color: #008F11;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
 }
 
 .cabecalho {
@@ -28,7 +44,7 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
     color: #765898;
@@ -36,7 +52,7 @@ body {
 }
 
 .cabecalho__menu__link:hover {
-    color: #008F11;
+    color: var(--cor-secundaria);
     font-size: 25px;
 }
 
@@ -56,42 +72,46 @@ body {
 
 .apresentacao__conteudo__texto a {
     text-decoration: none;
-    color: #765898;
+    color: var(--cor-terciaria);
 }
 
+.apresentacao__conteudo__texto__certificados {
+    align-items: start;
+} 
+
 .apresentacao__conteudo__titulo {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 36px;
 }
 
 .title {
-    color: #765898;
-    border: 1px solid #765898;
+    color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
     padding: 1px;
     margin: 1px;
 }
 
 .projetos {
-    color: #765898;
+    color: var(--cor-terciaria);
 }
 
 .name {
-    color: #765898;
-    font-family: 'Dancing Script', cursive;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-terciaria);
     text-decoration: underline;
     font-size: 26px;
 
 }
 
 .destaque {
-    background-color: #765898;
-    color: #0D0208;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     font-size: 26;
 }
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 400;
     text-align: justify;
 }
@@ -105,7 +125,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-style: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 24px;
 }
@@ -115,7 +135,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #008F11;
+    border: 2px solid var(--cor-secundaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -123,12 +143,12 @@ body {
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #765898;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 /*span {
     color: #765898;
@@ -136,8 +156,8 @@ body {
     padding: 10px;
 } */
 .picture {
-    color: #008F11;
-    border: 1px solid #008F11;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
     padding: 10px;
     /* width: 28%; */
     border-radius: 16px;
@@ -145,10 +165,10 @@ body {
 
 .rodape {
     padding: 24px;
-    color: black;
-    background-color: #008F11;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }

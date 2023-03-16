@@ -61,10 +61,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -136,7 +137,7 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-secundaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -159,7 +160,7 @@ body {
     color: var(--cor-secundaria);
     border: 1px solid var(--cor-secundaria);
     padding: 10px;
-    /* width: 28%; */
+    width: 33%;
     border-radius: 16px;
 }
 
@@ -171,4 +172,23 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }

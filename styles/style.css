@@ -192,6 +192,13 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+    .cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #765898;
+    text-decoration: none;
+}
 }
 
 .apresentacao__curriculum {

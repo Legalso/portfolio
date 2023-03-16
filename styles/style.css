@@ -16,6 +16,7 @@
     --cor-secundaria: #008F11;
     --cor-terciaria: #765898;
     --cor-hover: #272727;
+    --cor-hover-curriculum: #b880f8;
     --fonte-principal: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
     --fonte-terciaria: 'Dancing Script', cursive;
@@ -85,6 +86,13 @@ body {
     font-size: 2.25rem;
 }
 
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    text-align: justify;
+}
+
 .title {
     color: var(--cor-terciaria);
     border: 1px solid var(--cor-terciaria);
@@ -108,13 +116,6 @@ body {
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     font-size: 1.625rem;
-}
-
-.apresentacao__conteudo__texto {
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    font-weight: 400;
-    text-align: justify;
 }
 
 .apresentacao__links {
@@ -191,4 +192,83 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+}
+
+.apresentacao__curriculum {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+
+.apresentacao__curriculum__section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__curriculum__texto a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__curriculum__texto a:hover {
+    text-decoration: none;
+    color: var(--cor-hover-curriculum);
+    font-size: 25px;
+}
+
+.apresentacao__curriculum__texto__certificados {
+    align-items: center;
+} 
+
+.apresentacao__curriculum__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 2.25rem;
+}
+
+.apresentacao__curriculum__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.images__projetos {
+    width: 100%;
+}
+
+.images__projetos:hover {
+    width: 101%;
+}
+
+.text__project {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+}
+
+.text__project:hover {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+
+.projects {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects__section {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
 }

@@ -248,7 +248,7 @@ body {
 }
 
 .images__projetos:hover {
-    width: 101%;
+    scale: 120%;
 }
 
 .text__project {
